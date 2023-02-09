@@ -16,7 +16,7 @@
 
 - name: Check if PostgreSQL database is initialized.
   stat:
-    path: "{{ postgresql_data_dir }}/PG_VERSION"
+    path: "{{ postgresql_data_dir }}/{{ postgresql_version }}"
   register: pgdata_dir_version
 
 - name: Ensure PostgreSQL database is initialized.
