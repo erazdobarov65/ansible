@@ -10,5 +10,5 @@ localhost
 
 [database:vars]
 postgresql_data_dir = /var/lib/postgresql
-postgresql_version = 12
+postgresql_version = PG_VERSION
 ansible_connection=local
