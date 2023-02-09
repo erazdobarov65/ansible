@@ -1,0 +1,14 @@
+[app]
+192.168.0.16
+192.168.0.18
+
+[database]
+localhost
+
+[web]
+localhost
+
+[database:vars]
+postgresql_data_dir = /var/lib/postgresql
+postgresql_version = 12
+ansible_connection=local

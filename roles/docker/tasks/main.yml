@@ -1,0 +1,13 @@
+---
+# tasks file for docker
+- include: add_repo_centos.yml
+  when: ansible_os_family == 'RedHat'
+- include: install_centos.yml
+  when: ansible_os_family == 'RedHat'
+- include: add_repo_ubuntu.yml
+  when: ansible_os_family == 'Debian'
+- include: install_ubuntu.yml
+  when: ansible_os_family == 'Debian'
+- include: configure.yml  
+- include: service.yml
+ 

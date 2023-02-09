@@ -1,0 +1,8 @@
+---
+- name: Install Docker
+  ansible.builtin.yum:
+   name:
+    - docker-ce
+    - docker-ce-cli
+   state: latest
+   update_cache: true
