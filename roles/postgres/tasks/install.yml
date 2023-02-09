@@ -1,0 +1,9 @@
+---
+- name: Install packages
+  ansible.builtin.apt:
+   name:
+    - postgresql
+    - postgresql-contrib
+    - libpq-dev
+    - python3-psycopg2
+   state: present

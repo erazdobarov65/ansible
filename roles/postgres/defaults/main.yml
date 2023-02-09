@@ -1,0 +1,6 @@
+---
+# defaults file for postgres
+postgresql_bin_path: /usr/lib/postgresql/{{ postgresql_version }}/bin
+ansible_ssh_pipelining: true
+postgresql_user: postgres
+postgresql_group: postgres
